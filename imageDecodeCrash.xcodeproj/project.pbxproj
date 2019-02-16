@@ -12,6 +12,7 @@
 		E9F9AD4D221845F70049B719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F9AD4C221845F70049B719 /* main.m */; };
 		E9F9AD57221845F70049B719 /* imageDecodeCrashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F9AD56221845F70049B719 /* imageDecodeCrashTests.m */; };
 		E9F9AD62221845F70049B719 /* imageDecodeCrashUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F9AD61221845F70049B719 /* imageDecodeCrashUITests.m */; };
+		E9F9AD6F221846E40049B719 /* application.js in Resources */ = {isa = PBXBuildFile; fileRef = E9F9AD48221845F60049B719 /* application.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F9AD6F221846E40049B719 /* application.js in Resources */,
 				E9F9AD4A221845F70049B719 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

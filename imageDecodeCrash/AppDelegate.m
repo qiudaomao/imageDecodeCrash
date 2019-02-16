@@ -40,8 +40,12 @@ static NSString *tvBootURL = @"http://localhost:9001/application.js";
     TVApplicationControllerContext *appControllerContext = [[TVApplicationControllerContext alloc] init];
     
     // The JavaScript URL is used to create the JavaScript context for your TVMLKit application. Although it is possible to separate your JavaScript into separate files, to help reduce the launch time of your application we recommend creating minified and compressed version of this resource. This will allow for the resource to be retrieved and UI presented to the user quickly.
-    NSURL *javaScriptURL = [NSURL URLWithString:tvBootURL];
-    appControllerContext.javaScriptApplicationURL = javaScriptURL;
+//    NSURL *javaScriptURL = [NSURL URLWithString:tvBootURL];
+//    appControllerContext.javaScriptApplicationURL = javaScriptURL;
+    
+    NSString *localPath = [NSBundle.mainBundle pathForResource:@"application" ofType:@"js"];
+    NSURL *localURL = [NSURL fileURLWithPath:localPath];
+    appControllerContext.javaScriptApplicationURL = localURL;
     
     NSMutableDictionary *appControllerOptions = [appControllerContext.launchOptions mutableCopy];
     appControllerOptions[@"BASEURL"] = tvBaseURL;
